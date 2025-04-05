@@ -5,7 +5,7 @@ const requestRoutes = require('./src/routes/requestRoutes'); // تأكد من ا
 require('dotenv').config();
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT||3000;
 app.use(express.json()); // middleware للتحليل
 
 // استدعاء الاتصال عند تشغيل التطبيق
